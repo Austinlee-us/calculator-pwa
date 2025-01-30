@@ -1,0 +1,81 @@
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 0.9375rem; /* Space between buttons (15px -> 0.9375rem) */
+  max-width: 75rem; /* Limit container width (1200px -> 75rem) */
+  margin: 0 auto; /* Center the calculator horizontally */
+}
+
+.calculator button {
+  font-size: 5.2rem;
+  color: white;
+  border: none;
+  border-radius: 25%; /* Keep circular buttons */
+  cursor: pointer;
+  width: 100%; /* Let buttons fill grid cell */
+  aspect-ratio: 1; /* Maintain a square shape */
+}
+
+/* Outer container */
+.center{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures flex children wrap */
+  align-content: flex-start; /* Align wrapped lines */
+  
+  /* Enable text wrapping */
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Modern approach for breaking words */
+  white-space: normal; /* Allow wrapping of text */
+  text-align: left; /* Optional: Adjust text alignment */
+}
+
+/* Inner container with text */
+.calculations {
+  background: linear-gradient(0deg, hsla(0, 0%, 88%, 1) 0%, hsla(0, 0%, 63%, 1) 100%);
+  width: 1200px;
+  height: 280px;
+  font-size: 77px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Gradient button classes */
+.top {
+  background: linear-gradient(0deg, hsla(60, 100%, 50%, 1) 0%, hsla(39, 100%, 50%, 1) 50%, hsla(0, 100%, 50%, 1) 100%);
+}
+
+.middle {
+  background: linear-gradient(0deg, hsla(204, 100%, 50%, 1) 0%, hsla(120, 100%, 50%, 1) 50%, hsla(60, 100%, 50%, 1) 100%);
+}
+
+.bottom {
+  background: linear-gradient(0deg, hsla(300, 100%, 50%, 1) 0%, hsla(276, 100%, 50%, 1) 50%, hsla(204, 100%, 50%, 1) 100%);
+}
+
+.zero {
+  background: linear-gradient(45deg, hsla(240, 100%, 50%, 1) 0%, hsla(164, 100%, 50%, 1) 50%, hsla(0, 100%, 50%, 1) 100%);
+}
+
+.decimal {
+  background: linear-gradient(90deg, hsla(0, 100%, 50%, 1) 0%, hsla(180, 100%, 67%, 1) 25%, hsla(212, 100%, 50%, 1) 51%, hsla(180, 100%, 50%, 1) 75%, hsla(0, 100%, 50%, 1) 100%);
+}
+
+.equals {
+  background: linear-gradient(315deg, hsla(240, 100%, 50%, 1) 0%, hsla(164, 100%, 50%, 1) 50%, hsla(0, 100%, 50%, 1) 100%);
+}
+
+.divide {
+  background: linear-gradient(0deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
+}
+
+.multiply {
+  background: linear-gradient(0deg, hsla(355, 74%, 62%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
+}
+
+.minus {
+  background: linear-gradient(0deg, hsla(184, 82%, 51%, 1) 0%, hsla(275, 77%, 70%, 1) 50%, hsla(351, 88%, 62%, 1) 100%);
+}
+
+.add {
+  background: linear-gradient(180deg, hsla(187, 82%, 65%, 1) 0%, hsla(65, 77%, 63%, 1) 50%, hsla(327, 67%, 74%, 1) 100%);
+}

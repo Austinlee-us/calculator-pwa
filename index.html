@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Service Worker Registration -->
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch(error => console.log("Service Worker Registration Failed", error));
+  }
+</script>
+</head>
+<body>
+<div class="calculator">
+<div class="numbers"></div>
+    <div class="numberpad">
+        
+        
+
+        <button class="number-button number-9 calc-button">9</button>
+        <button class="number-button number-6 calc-button ">6</button>
+        <button class="number-button number-3 calc-button">3</button>
+        <button class="imp-button number-c">AC</button>
+        <button class="op-button add calc-button">+</button>
+       
+
+        <button class="number-button number-8 calc-button">8</button>
+        <button class="number-button number-5 calc-button ">5</button>
+        <button class="number-button number-2 calc-button">2</button>
+        <button class="number-button number-0 calc-button">0</button>
+        <button class="op-button minus calc-button">-</button>
+       
+
+        <button class="number-button number-7 calc-button">7</button>
+        <button class="number-button number-4 calc-button">4</button>
+        <button class="number-button number-1 calc-button">1</button>
+        <button class="imp-button equals calc-button">=</button>
+        <button class="op-button multiply calc-button">*</button>
+        
+
+        <button class="op-button number-decimal calc-button">.</button>
+        <button class="op-button number-negative">+/-</button>
+        <button class="op-button number-square ">x^2</button>
+        <button class="op-button number-sqrt">sqrt</button>
+        <button class="op-button divide calc-button">/</button>
+        
+
+      </div>
+    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.0/math.min.js"></script> 
+  <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,90 @@
+.penny {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(14, 92%, 86%, 1);
+
+background: linear-gradient(90deg, hsla(14, 92%, 86%, 1) 0%, hsla(338, 75%, 64%, 1) 50%, hsla(179, 83%, 64%, 1) 100%);
+}
+.nickel {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(186, 100%, 69%, 1);
+
+    background: linear-gradient(90deg, hsla(186, 100%, 69%, 1) 0%, hsla(83, 100%, 50%, 1) 50%, hsla(344, 81%, 54%, 1) 100%);
+}
+.dime {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(344, 81%, 54%, 1);
+
+background: linear-gradient(90deg, hsla(344, 81%, 54%, 1) 0%, hsla(24, 85%, 52%, 1) 50%, hsla(70, 76%, 65%, 1) 100%);
+}
+.quarter {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 180px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(66, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(66, 100%, 50%, 1) 0%, hsla(297, 81%, 54%, 1) 50%, hsla(351, 100%, 19%, 1) 100%);
+}
+.bill {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 250px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(351, 100%, 19%, 1);
+
+background: linear-gradient(90deg, hsla(351, 100%, 19%, 1) 0%, hsla(188, 100%, 89%, 1) 50%, hsla(230, 58%, 43%, 1) 100%);
+}
+.cost {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 400px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(230, 59%, 42%, 1);
+
+background: linear-gradient(90deg, hsla(230, 59%, 42%, 1) 0%, hsla(84, 81%, 54%, 1) 25%, hsla(188, 19%, 61%, 1) 50%, hsla(0, 36%, 58%, 1) 75%, hsla(294, 100%, 35%, 1) 100%);
+
+}
+.reset {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(294, 100%, 35%, 1);
+
+    background: linear-gradient(90deg, hsla(294, 100%, 35%, 1) 0%, hsla(81, 69%, 65%, 1) 100%);
+}
+.delete {
+    position: sticky; /* Makes the button sticky */
+    top: 10px;        /* Distance from the top of the viewport */
+    z-index: 1000;    /* Ensures it stays above other elements */
+    width: 300px;
+    height: 150px;
+    font-size: 50px;
+    background: hsla(81, 69%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(81, 69%, 65%, 1) 0%, hsla(321, 45%, 56%, 1) 33%, hsla(199, 49%, 55%, 1) 66%, hsla(32, 52%, 54%, 1) 100%);
+
+}
