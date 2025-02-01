@@ -65,6 +65,8 @@ html {
   text-align: center;
   white-space: normal; /* Allows text wrapping inside buttons if needed */
   overflow-wrap: break-word;
+  overflow-x: auto;
+
   margin: 0;
 }
 
@@ -81,6 +83,8 @@ html {
 
 .number-button:active {
   background-color: #4f4f4f;
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
 }
 
 /* Operator buttons */
@@ -96,6 +100,8 @@ html {
 
 .op-button:active {
   background-color: #af6f8f;
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
 }
 
 /* Important buttons (like equals, clear) */
@@ -111,6 +117,8 @@ html {
 
 .imp-button:active {
   background-color: #aa5a00;
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
 }
 
 /* Responsive Design */
@@ -122,11 +130,50 @@ html {
 
   .numberpad {
     grid-template-columns: repeat(5, minmax(60px, 1fr)); /* Slightly smaller on mobile */
-    gap: 8px;
+    gap: 10px;
   }
 
   .numberpad button {
-    height: 80px; /* Slightly smaller buttons on mobile */
+    min-height: 80px;
+    max-height: 100px;
     font-size: 24px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.door-container {
+  position: fixed; /* Keep the door independent of other elements */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent the image from spilling outside the container */
+  z-index: 9999; /* Ensure the door is above other elements */
+}
+
+.door {
+  position: absolute;
+  width: 100%; /* Fill the container width */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  bottom: 0; /* Start fully inside the container */
+  animation: doorMoveUp 3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Animation */
+@keyframes doorMoveUp {
+  0% {
+      bottom: 0; /* Start fully inside the container */
+  }
+  20% {
+    bottom: 0; /* Start fully inside the container */
+}
+  100% {
+      bottom: 100%; /* Move fully out of the container */
   }
 }
